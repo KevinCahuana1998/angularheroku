@@ -25,7 +25,8 @@
     "angular-file-uploader": "^5.0.2",
     "bootstrap": "^4.4.1",
     "jquery": "^3.5.0",
-    "moment": "^2.24.0",
+    "moment": "^2.18.1",
+    "ngx-moment": "^3.5.0",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"

@@ -1,7 +1,7 @@
 import { Component, OnInit, DoCheck } from '@angular/core';
 import { UserService } from './services/user.service';
 import { global } from './services/global';
-import { Route, Router } from '@angular/router';
+import { Router } from '@angular/router';
 
 
 

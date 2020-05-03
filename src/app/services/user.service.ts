@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { global } from './global';
-import { identity } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -17,6 +16,7 @@ export class UserService {
   }
 
   register(user: any) {
+
     const userJson = JSON.stringify(user);
 
     const header = new HttpHeaders().set('Content-Type', 'application/json');
