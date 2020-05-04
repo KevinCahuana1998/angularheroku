@@ -25,8 +25,8 @@
         </div>
         <div class="form-group">
             <label for="lang">Lenguaje del tema</label>
-            <input type="text" name="lang" #lang="ngModel" [(ngModel)]="topic.lang" required class="form-control">
-            <small *ngIf="!lang.valid && lang.touched" class="invalid-feedback d-block">El titulo no es valido</small>
+            <input type="text" name="lang" #lang="ngModel" [(ngModel)]="topic.lang" required pattern="[ a-z ]+" class="form-control">
+            <small *ngIf="!lang.valid && lang.touched" class="invalid-feedback d-block">El lenguaje no es valido</small>
         </div>
         <input type="submit" value="Crear tema" class="btm btn-success" [disabled]="addTopicForm.invalid">
 

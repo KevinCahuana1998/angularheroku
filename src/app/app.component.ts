@@ -37,4 +37,8 @@ export class AppComponent implements OnInit, DoCheck {
     this.token = null;
     this.router.navigate(['home']);
   }
+
+  onSubmit( texto: string) {
+    this.router.navigate(['/search', texto]);
+  }
 }

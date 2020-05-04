@@ -22,7 +22,7 @@ export class TopicService {
     return this.http.post(this.url + 'topic', JSON.stringify(topic), { headers: header});
   }
 
-  getTopics(id: string) {
+  getTopicsByUser(id: string) {
     return this.http.get(this.url + 'user-topics/' + id);
   }
 
@@ -45,4 +45,9 @@ export class TopicService {
   getTopicsPage(page = 1) {
     return this.http.get(this.url + 'topics/' + page);
   }
+
+  search(texto: string) {
+    return this.http.get(this.url + 'search/' + texto);
+  }
+
 }

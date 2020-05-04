@@ -1,0 +1,16 @@
+<div class="col col-md-12 mt-4">
+    <h3>Usuarios</h3>
+    <br>
+    <ul class="list-group" *ngFor="let user of users">
+        <li class="list-group-item">
+            <div class="avatar_mask2 float-left mr-4">
+                <img src="{{ url + 'avatar/'+ user.image}}" />
+            </div>
+            <h4>
+                <a [routerLink]="['/perfil', user._id]">{{" " + user.name + " " + user.surname+" "}}</a>
+            </h4>
+            <a class="btn btn-success float-left text-light mx-auto d-block" [routerLink]="['/perfil', user._id]">Ver mas</a>
+        </li>
+    </ul>
+
+</div>

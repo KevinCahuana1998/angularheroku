@@ -1,0 +1,19 @@
+<div class="col col-md-12 mt-4">
+    <div class="avatar_mask2 float-left mr-4 ">
+        <img src="{{ url + 'avatar/'+ user.image}}" />
+    </div>
+    <h1 class="mt-5">{{ " " + user.name + " " + user.surname+" " }}</h1>
+    <div class="clearfix"></div>
+    <ul class="list-group mt-4" *ngFor="let topic of topics">
+        <li class="list-group-item">
+            <h4>
+                <a [routerLink]="['/topic', topic._id]">{{topic.title}}</a>
+            </h4>
+
+            <span class="bagde badge-light">{{topic.date | amLocale: 'es' | amTimeAgo}}</span>
+            <a class="btn btn-success float-right text-light mx-auto d-block" [routerLink]="['/topic', topic._id]">Ver mas</a>
+        </li>
+    </ul>
+
+
+</div>

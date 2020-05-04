@@ -14,3 +14,14 @@
 .avatar_mask img {
     width: 40px;
 }
+
+.avatar_mask2 {
+    width: 75px;
+    height: 75px;
+    border-radius: 900px;
+    overflow: hidden;
+}
+
+.avatar_mask2 img {
+    width: 75px;
+}

@@ -25,7 +25,7 @@ export class ListComponent implements OnInit {
     }
 
   ngOnInit() {
-    this.topicService.getTopics(this.identity._id).subscribe( (data: any) => {
+    this.topicService.getTopicsByUser(this.identity._id).subscribe( (data: any) => {
       this.topics = data.topics;
     });
   }
@@ -33,7 +33,7 @@ export class ListComponent implements OnInit {
   delete(id: string) {
     this.topicService.deleteTopic(id, this.token).subscribe( (data: any) => {
       if (data.topicDeleted && data.topicDeleted._id) {
-        this.topicService.getTopics(this.identity._id).subscribe( (response: any) => {
+        this.topicService.getTopicsByUser(this.identity._id).subscribe( (response: any) => {
           this.topics = response.topics;
         });
       }

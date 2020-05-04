@@ -61,5 +61,14 @@ export class UserService {
     return this.http.put(this.url + 'update', userJson, {headers: header});
 
   }
+
+  getUsers() {
+    return this.http.get(this.url + 'users');
+  }
+
+  getUser(userId: string) {
+    return this.http.get(this.url + 'user/' + userId);
+  }
+
 }
 

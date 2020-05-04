@@ -12,6 +12,8 @@ import { EditComponent } from './components/edit/edit.component';
 import { ListComponent } from './components/list/list.component';
 import { MainComponent } from './components/main/main.component';
 
+import { UserService } from '../services/user.service';
+import { UserGuard } from '../services/user.guard';
 
 import { MomentModule } from 'ngx-moment';
 // Ngmodule
@@ -35,7 +37,7 @@ import { MomentModule } from 'ngx-moment';
         ListComponent,
         MainComponent
     ],
-    providers: []
+    providers: [UserGuard, UserService]
 })
 
 export class PanelModule {}
