@@ -16,6 +16,7 @@ import { SearchComponent } from './components/search/search.component';
 
 
 const routes: Routes = [
+  { path: '', component: HomeComponent},
   { path: 'home', component: HomeComponent},
   { path: 'login', canActivate: [NoIdentityGuard], component: LoginComponent},
   { path: 'register', canActivate: [NoIdentityGuard], component: RegisterComponent},

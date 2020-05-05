@@ -1,3 +1,3 @@
 export let global = {
-    url: 'http://localhost:3999/api/'
+    url: 'https://foro-mean.herokuapp.com/api/'
 };
