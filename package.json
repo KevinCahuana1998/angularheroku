@@ -30,7 +30,7 @@
         "@types/jquery": "^3.3.36",
         "angular-file-uploader": "^5.0.2",
         "bootstrap": "^4.4.1",
-        "express": "^4.17.1",
+        "express": "^4.17.3",
         "jquery": "^3.5.0",
         "moment": "^2.18.1",
         "ngx-moment": "^3.5.0",
